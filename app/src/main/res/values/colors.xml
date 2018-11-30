@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00736F</color>
+    <color name="colorPrimaryDark">#004441</color>
+    <color name="colorAccent">#004441</color>
+    <color name="displayFab">#FF4159</color>
+    <color name="fabLarge">#FF4159</color>
+    <color name="whatsappFab">#25D366</color>
+    <color name="snapchatFab">#FFFB01</color>
+    <color name="facebookFab">#3B5998</color>
+    <color name="instaFab">#E95950</color>
+    <color name="indicator_selected">#282828</color>
+    <color name="indicator_unselected">#CCCCCC</color>
+</resources>

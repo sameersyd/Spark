@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_coins"
+            android:icon="@drawable/coins"
+            android:title="Coins" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/coins"
+            android:title="Help" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_sign_out"
+                android:icon="@drawable/logoutblack"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>

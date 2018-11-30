@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context="com.haze.android.spark.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/profile_pic_bck"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart"
+        android:alpha="0.75"
+        android:src="@drawable/avatar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:elevation="100dp"
+                android:background="@drawable/profile_design"
+                android:id="@+id/relativeLayout2">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/profile_premiumView"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:lottie_loop="true"
+                    android:visibility="gone"
+                    app:lottie_fileName="premium_star.json"
+                    app:lottie_autoPlay="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <LinearLayout
+                    android:id="@+id/linear_one"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_pic_image"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/avatar"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/profile_name"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAllCaps="false"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:id="@+id/profile_city_country"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="#A3A3A3"
+                            android:layout_marginRight="10dp"
+                            android:textSize="18sp"
+                            android:layout_marginTop="3dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/profile_status"
+                    android:layout_below="@id/linear_one"
+                    android:textColor="#737373"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_below="@id/profile_status"
+                    android:id="@+id/linear_three"
+                    android:layout_width="145dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="#000000"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linorie"
+                    android:layout_below="@id/linear_three"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/profile_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#212121"
+                            android:textAlignment="center"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:textSize="35sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#C4C4C4"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:textSize="22sp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="AGE"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/profile_votes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#212121"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textAlignment="center"
+                            android:textSize="35sp"/>
+
+                        <TextView
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#C4C4C4"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textSize="22sp"
+                            android:text="VOTES"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/profile_coins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#212121"
+                            android:textAlignment="center"
+                            android:textSize="35sp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-condensed"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="#C4C4C4"
+                            android:textAlignment="center"
+                            android:textSize="22sp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:text="COINS"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_six"
+                    android:background="#000000"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_below="@id/linorie"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:orientation="vertical"></LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/socialRela"
+                    android:orientation="vertical"
+                    android:layout_below="@id/linear_six"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/socilaOne"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/insta_nbcol"/>
+
+                            <Button
+                                android:id="@+id/instaView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="View"
+                                android:paddingLeft="45dp"
+                                android:paddingRight="45dp"
+                                android:textColor="#FFFFFF"
+                                android:layout_marginTop="10dp"
+                                android:textAllCaps="false"
+                                android:backgroundTint="#11B4AE"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="sans-serif-condensed"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/whatsapp_nbcol"/>
+
+                            <Button
+                                android:id="@+id/whatsappView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="View"
+                                android:paddingLeft="45dp"
+                                android:paddingRight="45dp"
+                                android:textColor="#FFFFFF"
+                                android:layout_marginTop="10dp"
+                                android:textAllCaps="false"
+                                android:backgroundTint="#11B4AE"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="sans-serif-condensed"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@id/socilaOne"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/snap_nbcol"/>
+
+                            <Button
+                                android:id="@+id/snapchatView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="View"
+                                android:paddingLeft="45dp"
+                                android:paddingRight="45dp"
+                                android:textColor="#FFFFFF"
+                                android:layout_marginTop="10dp"
+                                android:textAllCaps="false"
+                                android:backgroundTint="#11B4AE"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="sans-serif-condensed"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/fb_nbcol"/>
+
+                            <Button
+                                android:id="@+id/fbView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="View"
+                                android:backgroundTint="#11B4AE"
+                                android:paddingLeft="45dp"
+                                android:paddingRight="45dp"
+                                android:textColor="#FFFFFF"
+                                android:layout_marginTop="10dp"
+                                android:textAllCaps="false"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="sans-serif-condensed"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/editProfile"
+                    android:layout_below="@id/socialRela"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#5D5D5D"
+                    android:text="Edit Profile"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="25dp"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <TextView
+                    android:id="@+id/profile_whatsapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#5D5D5D"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:id="@+id/profile_fb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#5D5D5D"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:id="@+id/profile_insta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#5D5D5D"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="15dp"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/profile_snap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#5D5D5D"
+                    android:visibility="gone"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </ScrollView>
+
+</RelativeLayout>

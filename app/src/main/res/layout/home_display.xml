@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_margin="20dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:id="@+id/home_profile_pic"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="#11B4AE"/>
+
+        <LinearLayout
+            android:id="@+id/divider_black"
+            android:layout_below="@id/home_profile_pic"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:layout_alignRight="@+id/home_profile_pic"
+            android:layout_alignEnd="@+id/home_profile_pic"
+            android:background="#000000"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/home_name"
+            android:layout_below="@id/divider_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAMEER"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="8dp"
+            android:textColor="#5E6A70"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:fontFamily="sans-serif-condensed"
+            android:background="#F1F4F5"
+            android:layout_alignRight="@+id/home_profile_pic"
+            android:layout_alignEnd="@+id/home_profile_pic" />
+
+        <TextView
+            android:id="@+id/home_city"
+            android:layout_below="@id/home_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chennai"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="8dp"
+            android:textColor="#5E6A70"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_alignRight="@+id/home_profile_pic"
+            android:layout_alignEnd="@+id/home_profile_pic"
+            android:background="#F1F4F5"/>
+
+        <TextView
+            android:id="@+id/home_age"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/home_phn"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/home_fbLink"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/home_status"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/home_instaLink"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/home_snapLink"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/home_email"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/home_likes"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/home_profile_pic_name"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/home_country"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/home_uid"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/home_view_fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:clickable="true"-->
+        <!--android:layout_marginLeft="104dp"-->
+        <!--app:fabSize="normal"-->
+        <!--android:src="@drawable/view"-->
+        <!--app:backgroundTint="@color/fabLarge"-->
+        <!--app:elevation="6dp"-->
+        <!--app:pressedTranslationZ="12dp"-->
+        <!--android:layout_marginStart="104dp"-->
+        <!--android:layout_marginBottom="41dp"-->
+        <!--android:layout_alignBottom="@+id/relativeLayout"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+</RelativeLayout>

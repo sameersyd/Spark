@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haze.android.spark.LoginActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/emailLogin"
+            android:elevation="6dp"
+            android:layout_width="match_parent"
+            android:textColor="#000000"
+            android:hint="Email"
+            android:textCursorDrawable="@null"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:layout_height="60dp"/>
+
+        <EditText
+            android:id="@+id/passwordLogin"
+            android:elevation="6dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:textColor="#000000"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@null"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:layout_height="60dp"/>
+
+        <CheckBox
+            android:id="@+id/rememberLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="18sp"
+            android:checked="true"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#1D1D1D"
+            android:buttonTint="#000000"
+            android:text="REMEMBER ME"/>
+
+        <Button
+            android:id="@+id/loginLogin"
+            android:elevation="6dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#383838"
+            android:textColor="#FFFFFF"
+            android:text="LOGIN"/>
+
+        <TextView
+            android:id="@+id/forgotLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="18sp"
+            android:textColor="#1D1D1D"
+            android:layout_marginTop="20sp"
+            android:text="Forgot password?"/>
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="14sp"
+            android:textColor="#1D1D1D"
+            android:layout_marginTop="20sp"
+            android:text="Not a member? Get registered in SPARK"/>
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

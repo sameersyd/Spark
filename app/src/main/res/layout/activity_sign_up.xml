@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haze.android.spark.SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/avatar"/>
+
+            <LinearLayout
+                android:layout_below="@id/profile_image"
+                android:id="@+id/LinearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/user"/>
+
+                    <EditText
+                        android:id="@+id/nameSign"
+                        android:elevation="6dp"
+                        android:layout_width="match_parent"
+                        android:textColor="#000000"
+                        android:hint="NAME"
+                        android:maxLength="13"
+                        android:textCursorDrawable="@null"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:layout_height="60dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/age"/>
+
+                    <EditText
+                        android:id="@+id/ageSign"
+                        android:elevation="6dp"
+                        android:layout_width="match_parent"
+                        android:textColor="#000000"
+                        android:hint="AGE"
+                        android:inputType="number"
+                        android:textCursorDrawable="@null"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:layout_height="60dp"/>
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/gender_radio_sign"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/man_col"/>
+
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/man_radio_sign"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/woman_col"/>
+
+                    <RadioButton
+                        android:id="@+id/woman_radio_sign"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+                <Spinner
+                    android:id="@+id/country_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="60dp"
+                    android:elevation="6dp"/>
+
+                <EditText
+                    android:id="@+id/city_editTxt"
+                    android:elevation="6dp"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:hint="CITY"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:textCursorDrawable="@null"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="20dp"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Social Accounts"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="#737272"
+                    android:textSize="18sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/whatsapp"/>
+
+                    <EditText
+                        android:id="@+id/phnSign"
+                        android:elevation="6dp"
+                        android:layout_width="match_parent"
+                        android:textColor="#000000"
+                        android:hint="PHONE"
+                        android:inputType="number"
+                        android:textCursorDrawable="@null"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:layout_height="60dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/fb"/>
+
+                    <EditText
+                        android:id="@+id/fbSign"
+                        android:elevation="6dp"
+                        android:layout_width="match_parent"
+                        android:textColor="#000000"
+                        android:hint="FB PROFILE LINK"
+                        android:textCursorDrawable="@null"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:layout_height="60dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/insta"/>
+
+                    <EditText
+                        android:id="@+id/instaSign"
+                        android:elevation="6dp"
+                        android:layout_width="match_parent"
+                        android:textColor="#000000"
+                        android:hint="INSTA USERNAME"
+                        android:textCursorDrawable="@null"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:layout_height="60dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/snap"/>
+
+                    <EditText
+                        android:id="@+id/snapSign"
+                        android:elevation="6dp"
+                        android:layout_width="match_parent"
+                        android:textColor="#000000"
+                        android:hint="SNAPCHAT USERNAME"
+                        android:textCursorDrawable="@null"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:layout_height="60dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/email"/>
+
+                    <EditText
+                        android:id="@+id/emailSign"
+                        android:elevation="6dp"
+                        android:layout_width="match_parent"
+                        android:textColor="#000000"
+                        android:hint="EMAIL"
+                        android:textCursorDrawable="@null"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:layout_height="60dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/private_boards"/>
+
+                    <EditText
+                        android:id="@+id/passwordSign"
+                        android:elevation="6dp"
+                        android:layout_width="match_parent"
+                        android:textColor="#000000"
+                        android:hint="PASSWORD"
+                        android:inputType="textPassword"
+                        android:textCursorDrawable="@null"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:layout_height="60dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/signUpBtn"
+                android:elevation="6dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_below="@id/LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#383838"
+                android:textColor="#FFFFFF"
+                android:text="SIGN UP"/>
+
+            <TextView
+                android:id="@+id/loginMe"
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="45dp"
+                android:clickable="true"
+                android:textColor="#000000"
+                android:layout_below="@id/signUpBtn"
+                android:fontFamily="sans-serif-condensed"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="Already have an account?"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
